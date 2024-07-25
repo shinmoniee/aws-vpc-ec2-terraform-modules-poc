@@ -37,14 +37,13 @@ resource "aws_subnet" "public_subnet_1a" {
 }
 ```
 
-```
-Lessons Learned
+## Lessons Learned
+
 1. Always use dynamic AZ selection in Terraform configurations to ensure portability across different AWS accounts and regions.
 2. Regularly update and test infrastructure code to catch and resolve such issues early in the development process.
 3. Pay attention to AWS resource limitations and availabilities, which can vary between accounts and regions.
-```
 
-```
-Conclusion
+
+## Conclusion
+
 By implementing dynamic AZ selection, Terraform configuration becomes more robust and portable. This change ensures that the infrastructure can be deployed consistently across different AWS accounts and regions, regardless of specific AZ availability.
-```
