@@ -22,13 +22,13 @@ variable "private_subnet_1b_cidr" {
   default = "10.1.3.0/24"
 }
 
-variable "availability_zone_a" {
-  default = "ap-northeast-1a"
-}
+# variable "availability_zone_a" {
+#   default = "ap-northeast-1a"
+# }
 
-variable "availability_zone_b" {
-  default = "ap-northeast-1b"
-}
+# variable "availability_zone_b" {
+#   default = "ap-northeast-1b"
+# }
 
 variable "bastion_ami" {
   default = "ami-0d03c6e00d5732e28"

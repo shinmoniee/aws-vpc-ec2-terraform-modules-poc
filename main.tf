@@ -23,8 +23,8 @@ module "subnets" {
   public_subnet_1b_cidr  = var.public_subnet_1b_cidr
   private_subnet_1a_cidr = var.private_subnet_1a_cidr
   private_subnet_1b_cidr = var.private_subnet_1b_cidr
-  availability_zone_a    = var.availability_zone_a
-  availability_zone_b    = var.availability_zone_b
+  # availability_zone_a    = var.availability_zone_a
+  # availability_zone_b    = var.availability_zone_b
   internet_gateway_id    = module.vpc.internet_gateway_id
 }
 
@@ -50,4 +50,3 @@ module "instances" {
   bastion_ami            = var.bastion_ami
   private_instance_ami   = var.private_instance_ami
 }
-

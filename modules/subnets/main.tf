@@ -1,7 +1,11 @@
+data "aws_availability_zones" "available" {
+  state = "available"
+}
+
 resource "aws_subnet" "public_subnet_1a" {
     vpc_id = var.vpc_id
     cidr_block = var.public_subnet_1a_cidr
-    availability_zone = var.availability_zone_a
+    availability_zone = data.aws_availability_zones.available.names[0]
 
     tags = {
       Name = "public_subnet_1a"
@@ -11,7 +15,7 @@ resource "aws_subnet" "public_subnet_1a" {
 resource "aws_subnet" "public_subnet_1b" {
     vpc_id = var.vpc_id
     cidr_block = var.public_subnet_1b_cidr
-    availability_zone = var.availability_zone_b
+    availability_zone = data.aws_availability_zones.available.names[1]
 
     tags = {
       Name = "public_subnet_1b"
@@ -21,7 +25,7 @@ resource "aws_subnet" "public_subnet_1b" {
 resource "aws_subnet" "private_subnet_1a" {
     vpc_id = var.vpc_id
     cidr_block = var.private_subnet_1a_cidr
-    availability_zone = var.availability_zone_a
+    availability_zone = data.aws_availability_zones.available.names[0]
 
     tags = {
       Name = "private_subnet_1a"
@@ -31,7 +35,7 @@ resource "aws_subnet" "private_subnet_1a" {
 resource "aws_subnet" "private_subnet_1b" {
     vpc_id = var.vpc_id
     cidr_block = var.private_subnet_1b_cidr
-    availability_zone = var.availability_zone_b
+    availability_zone = data.aws_availability_zones.available.names[1]
 
     tags = {
       Name = "private_subnet_1b"

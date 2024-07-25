@@ -23,15 +23,15 @@ variable "private_subnet_1b_cidr" {
   type        = string
 }
 
-variable "availability_zone_a" {
-  description = "Availability Zone for a_subnets"
-  type        = string
-}
+# variable "availability_zone_a" {
+#   description = "Availability Zone for a_subnets"
+#   type        = string
+# }
 
-variable "availability_zone_b" {
-  description = "Availability Zone for b_subnets"
-  type        = string
-}
+# variable "availability_zone_b" {
+#   description = "Availability Zone for b_subnets"
+#   type        = string
+# }
 
 variable "internet_gateway_id" {
   description = "ID of Internet Gateway"
