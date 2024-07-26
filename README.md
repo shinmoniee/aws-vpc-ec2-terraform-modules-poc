@@ -2,7 +2,7 @@
 
 ## Overview
 
-This hands-on demonstrates the use of Terraform to create a modular, scalable AWS infrastructure. It includes a Virtual Private Cloud (VPC) with public and private subnets, NAT Gateway, Internet Gateway, and EC2 instances. 
+This hands-on demonstrates creating a scalable AWS infrastructure using Terraform modules. It provisions a Virtual Private Cloud (VPC) with public and private subnets, NAT Gateway, Internet Gateway, and EC2 instances. 
 
 ## Infrastructure Design
 
